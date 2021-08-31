@@ -24,7 +24,9 @@ class SignIn extends Component {
         } catch (error) {
             console.log(error)
         }
+        
     }
+    signOutUser = () => auth.signOut();
     handleChange = event => {
         const {value,name} = event.target;
 
@@ -42,7 +44,7 @@ class SignIn extends Component {
                     value={this.state.email} 
                     handleChange={this.handleChange} 
                     label="Email" 
-                    autocomplete="on"
+                    autoComplete="username"
                     required/>
                    
 
@@ -52,13 +54,14 @@ class SignIn extends Component {
                     handleChange={this.handleChange}
                     value={this.state.password} 
                     label="Password" 
-                    autocomplete="on"
+                    autoComplete="new-password"
                     required />
                    
 
                    <div className="button">
                         <Button type="submit" value="Submit Form">Sign In</Button>
-                        <Button onClick={signInWithGoogle} isGoogleSignedIn>{''}Sign In with Google{''}</Button>
+                        <Button  onClick={signInWithGoogle} isGoogleSignedIn>{''}Sign In with Google{''}</Button>
+                       
                    </div>
                 </form>
             </div>

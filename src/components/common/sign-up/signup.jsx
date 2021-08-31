@@ -66,18 +66,21 @@ class SignUp extends Component {
                         name="email"
                         value={email}
                         handleChange={this.handleChange}
+                        autoComplete="username"
                         label = "Email"  required/>
                     <FormInput
                         type="password"
                         name="password"
                         value={password}
                         handleChange={this.handleChange}
+                        autoComplete="new-password"
                         label = "Password" required/>
                     <FormInput
                         type="password"
                         name="confirmPassword"
                         value={confirmPassword}
                         handleChange={this.handleChange}
+                        autoComplete="new-password"
                         label = "Confirm Password" required/>
 
                     <Button type="submit">Sign Up</Button>
