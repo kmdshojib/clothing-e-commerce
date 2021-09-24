@@ -6,7 +6,7 @@ import Driectory from '../common/driectory/driectory.com'
 const HomePage = () => {
     return ( 
         <div className="homepage">
-           <Driectory />
+           <Driectory /> 
         </div>
      );
 }
