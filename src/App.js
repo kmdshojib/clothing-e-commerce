@@ -49,10 +49,10 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/clothing-e-commerce" component={HomePage}/>
-          <Route  path="clothing-e-commerce/shop" component={ShopPage}/> 
-          <Route exact  path="clothing-e-commerce/checkout" component={CheckoutPage}/>
+          <Route  path="/clothing-e-commerce/shop" component={ShopPage}/> 
+          <Route exact  path="/clothing-e-commerce/checkout" component={CheckoutPage}/>
 
-          <Route exact  path="clothing-e-commerce/signin" render={() => this.props.currentUser ? (<Redirect to="/"/>) : 
+          <Route exact  path="/clothing-e-commerce/signin" render={() => this.props.currentUser ? (<Redirect to="/"/>) : 
           (<SignInSignUpPage />)}/>
         </Switch>
      </div>
