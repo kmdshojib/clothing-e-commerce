@@ -1,7 +1,7 @@
 {
   "name": "clothing",
   "version": "0.1.0",
-  "homepage": "https://kmdshojib.github.io",
+  "homepage": "https://kmdshojib.github.i/clothing-e-commerce",
   "private": true,
   "dependencies": {
     "@google-pay/button-react": "^2.6.0",
