@@ -5,45 +5,51 @@ import { selectCartItems,selectCartTotal } from '../../redux/cart/cart.selectors
 import CheckoutItem from '../checkout-items/checkout-item.com';
 import StripeCheckoutBurron from '../stripe-button/stripe-button.component'
 
+import {
+    CheckoutPageContainer,
+    CheckoutHeaderContainer,
+    HeaderBlockContainer,
+    TotalContainer,
+    WarningContainer
+  } from './checkout.styles';
 
-import './checkout.styles.scss'
 
 const CheckoutPage = ({cartItems,total}) => {
     return ( 
-        <div className='checkout-page'>
-            <div className="checkout-header">
-                <div className="header-block">
+        <CheckoutPageContainer>
+            <CheckoutHeaderContainer>
+                <HeaderBlockContainer>
                     <span>Product</span>
-                </div>
+                </HeaderBlockContainer>
 
-                <div className="header-block">
+                <HeaderBlockContainer>
                     <span>Discription</span>
-                </div>
+                </HeaderBlockContainer>
 
-                <div className="header-block">
+                <HeaderBlockContainer>
                     <span>Quantity</span>
-                </div>
+                </HeaderBlockContainer>
 
-                <div className="header-block">
+                <HeaderBlockContainer>
                     <span>Price</span>
-                </div>
+                </HeaderBlockContainer>
 
-                 <div className="header-block">
+                 <HeaderBlockContainer>
                     <span>Remove</span>
-                </div>
+                </HeaderBlockContainer>
 
-            </div>
+            </CheckoutHeaderContainer>
             {cartItems.map(cartItem => (<CheckoutItem key={cartItem.id} item={cartItem}/>))}
 
-            <div className="total">
+            <TotalContainer>
                 <span>Total: ${total}</span>
-            </div>
-            <div className="test-warning">
+            </TotalContainer>
+            <WarningContainer>
                 *Please use the following test credit card for payments* <br/>
                 4242 4242 4242 4242 - Exp:01/23 - CVV:123
-            </div>
+            </WarningContainer>
             <StripeCheckoutBurron price={total}/>
-        </div>
+        </CheckoutPageContainer>
      );
 }
 

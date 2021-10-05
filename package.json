@@ -1,7 +1,6 @@
 {
   "name": "clothing",
   "version": "0.1.0",
-  "homepage": "https://kmdshojib.github.i/clothing-e-commerce",
   "private": true,
   "dependencies": {
     "@google-pay/button-react": "^2.6.0",
@@ -20,6 +19,7 @@
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "reselect": "^4.0.0",
+    "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -29,7 +29,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-   
   },
   "eslintConfig": {
     "extends": [

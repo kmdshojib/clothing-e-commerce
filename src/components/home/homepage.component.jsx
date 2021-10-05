@@ -1,13 +1,13 @@
 import React from 'react';
 import Driectory from '../common/driectory/driectory.com'
-// import '../Styles/homepage.styles.scss'
+import {HomePageContainer} from './homepage.styles'
 
 
 const HomePage = () => {
     return ( 
-        <div className="homepage">
+        <HomePageContainer>
            <Driectory /> 
-        </div>
+        </HomePageContainer>
      );
 }
  
