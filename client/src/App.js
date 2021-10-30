@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import './App.css';
+import {GlobalStyle} from './globals.styles'
+
 import { Route,Switch,Redirect } from 'react-router';
 import { connect } from 'react-redux';
 import {createStructuredSelector } from 'reselect'
@@ -38,6 +39,7 @@ const App = ({checkUserSession,currentUser}) => {
   // }
     return ( 
       <div>
+      <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage}/>
@@ -60,4 +62,3 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-

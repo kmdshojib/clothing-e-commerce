@@ -40,7 +40,7 @@ const  SignUp = ({signUpStart}) => {
         const { email, password, confirmPassword, displayName} = userCredentials
         return ( 
             <SignUpContainer>
-                <SignUpTitle>I do not have an account</SignUpTitle>
+                <SignUpTitle>Don't have an account?</SignUpTitle>
                 <span>Sign Up with Your email and password</span>
 
                 <form onSubmit={handleSubmit} className="sign-up-form">

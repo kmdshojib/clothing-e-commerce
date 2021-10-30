@@ -9,6 +9,7 @@ export const CheckoutPageContainer = styled.div`
   margin: 50px auto 0;
   button {
     margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
   }
 `;
