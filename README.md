@@ -1,3 +1,12 @@
+Clothing-Ecommerce 
+
+Created a full-stack e-commerce website that is able to handle and integrate secure payments, routes, NoSQL database, and OAuth. The goal was to use the project as a boiler-plate for future similar work, and adapt to my family's business own needs for payment integration on our company's website.
+
+ Technology: React, Redux, NodeJS, Stripe, Firebase/Firestore
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
